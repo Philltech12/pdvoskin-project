@@ -1,0 +1,17 @@
+body {	
+	background-image: url("../images/img4.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 95%;
+	width: 98%;
+	color: white;
+}
+div.headerFontSize {
+	font-size: 27px;
+}
+div.paddingTopHeader {
+	padding-top: 15px;
+}
+div.optionsFontSize{
+	font-size: 20px;
+}

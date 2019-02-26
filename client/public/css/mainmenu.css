@@ -1,11 +1,15 @@
+h1 {
+	color: white;
+}
+
 body {	
 	
-	background-image: url("../images/img1.jpg"); 
+	background-image: url("../images/img4.jpg"); 
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 95%;
 	width: 98%;
-	
+	color: white;
 }
 div.lineBreak1 {
 	display: block;
@@ -30,4 +34,11 @@ div.optionsFontSize {
 div.paddingRight {
 	padding-right: 900px;
 }
+@font-face {
+	font-family: yoster;
+	src: url("yoster");
+}
 
+div.cFont {
+	font-family: yoster;
+}
