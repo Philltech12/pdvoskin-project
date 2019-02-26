@@ -1,0 +1,33 @@
+body {	
+	
+	background-image: url("../images/img1.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 95%;
+	width: 98%;
+	
+}
+div.lineBreak1 {
+	display: block;
+}
+div.alignHeaderLeft {
+	position: relative;
+	left: 635px;
+}
+div.alignOptionsLeft {
+	position: relative;
+	left: 640px;
+}
+div.center {
+	text-align: center;
+}
+div.headerFontSize {
+	font-size: 75px;
+}
+div.optionsFontSize {
+	font-size: 30px;
+}
+div.paddingRight {
+	padding-right: 900px;
+}
+
