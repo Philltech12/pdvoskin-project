@@ -6,12 +6,30 @@ body {
 	width: 98%;
 	color: white;
 }
-div.headerFontSize {
-	font-size: 27px;
+.headerFontSize {
+	font-size: 35px;
 }
-div.paddingTopHeader {
+.paddingTopHeader {
 	padding-top: 15px;
 }
-div.optionsFontSize{
-	font-size: 20px;
+.optionsFontSize{
+	font-size: 30px;
+}
+.alignLeftName{
+	position: absolute;
+	left: 300px;
+	width: 20px;
+	border: 5px;
+}
+.alignLeftScore{
+	position: absolute;
+	left: 500px;
+	width: 20px;
+	border: 5px;
+}
+.alignLeftDate{
+	position: absolute;
+	left: 700px;
+	width: 20px;
+	border: 5px;
 }
