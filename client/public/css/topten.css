@@ -17,19 +17,19 @@ body {
 }
 .alignLeftName{
 	position: absolute;
-	left: 300px;
+	left: 500px;
 	width: 20px;
 	border: 5px;
 }
 .alignLeftScore{
 	position: absolute;
-	left: 500px;
+	left: 735px;
 	width: 20px;
 	border: 5px;
 }
 .alignLeftDate{
 	position: absolute;
-	left: 700px;
+	left: 960px;
 	width: 20px;
 	border: 5px;
 }
