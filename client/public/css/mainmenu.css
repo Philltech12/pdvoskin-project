@@ -42,3 +42,13 @@ div.paddingRight {
 div.cFont {
 	font-family: yoster;
 }
+a:visited {
+	color: gold;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:unvisited {
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+}
