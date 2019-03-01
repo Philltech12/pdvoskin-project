@@ -1,49 +1,43 @@
 body {	
-	background-image: url("../images/img4.jpg"); 
+	background-image: url("../images/grass.png"); 
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 95%;
 	width: 98%;
 	color: white;
 }
-.headerFontSize{
+.header{
 	font-size: 35px;
-}
-.mmLink{
-	padding-top:15px;
-	font-size: 20px;
-}
-.paddingTopHeader{
-	padding-top: 15px;
+	text-align: center;
+	padding: 50px;
 }
 .optionsFontSize{
-	font-size: 30px;
+	font-size: 20px;
 }
 .alignLeftName{
 	position: absolute;
 	left: 500px;
 	width: 20px;
+	top: 225px;
 	border: 5px;
 }
 .alignLeftScore{
 	position: absolute;
 	left: 735px;
 	width: 20px;
+	top: 225px;
 	border: 5px;
 }
 .alignLeftDate{
 	position: absolute;
 	left: 960px;
 	width: 20px;
+	top: 225px;
 	border: 5px;
 }
-a:visited {
-	color: cyan;
-	background-color: transparent;
-	text-decoration: none;
-}
-a:unvisited {
-	color: green;
-	background-color: transparent;
-	text-decoration: none;
+.pressSpace{
+	font-size: 20px;
+	position: absolute;
+	top: 5%;
+	left: 40%;
 }

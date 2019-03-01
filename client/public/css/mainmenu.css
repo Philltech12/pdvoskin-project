@@ -1,29 +1,32 @@
 h1 {
 	color: white;
 }
-
 body {	
-	
-	background-image: url("../images/img4.jpg"); 
+	background-image: url("../images/wagon.png"); 
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 95%;
 	width: 98%;
 	color: white;
+	background-color: black;
 }
 div.lineBreak1 {
 	display: block;
 }
+.alignHeaderTop {
+	position: relative;
+	top:30px;
+}
 div.alignHeaderLeft {
 	position: relative;
-	left: 635px;
+	left: 100px;
 }
 div.alignOptionsLeft {
 	position: relative;
-	left: 640px;
+	left: 100px;
 }
-div.center {
-	text-align: center;
+div.left {
+	text-align: left;
 }
 div.headerFontSize {
 	font-size: 75px;

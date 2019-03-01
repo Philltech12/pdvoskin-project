@@ -1,0 +1,7 @@
+@font-face {
+	font-family: western;
+	src: url("/fonts/yoster.ttf");
+}
+.westernFont {
+	font-family: western;
+}

@@ -1,9 +1,27 @@
 .fadeIndex{animation:fading 2s infinite}
 @keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 
-
-div.backgroundColor {
-	background-color: lightblue;
-	height: 735px;
+body {
+	background-image: url("/images/img2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 97%;
+	width: 98%;
+	
 }
-
+.header {
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	width: 100%;
+	font-size: 60px;
+	transform: translate(-50%, -50%);
+	Color: white;
+}
+.fadingMessage {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	font-size: 40px;
+	color: black;
+}
