@@ -5,3 +5,42 @@
 .westernFont {
 	font-family: western;
 }
+.header {
+	font-size: 70px;
+	position: absolute;
+	left: 40px;
+	top: 150px;
+	color: mediumorchid;
+}
+.option1{
+	font-size: 30px;
+	position: absolute;
+	left: 40px;
+	top: 300px;
+	color: gold;
+}
+.option2{
+	font-size: 30px;
+	position: absolute;
+	left: 40px;
+	top: 350px;
+	color: gold;
+}
+.option3{
+	font-size: 30px;
+	position: absolute;
+	left: 40px;
+	top: 400px;
+	color: gold;
+}
+.option4{
+	font-size: 30px;
+	position: absolute;
+	left: 40px;
+	top: 450px;
+	color: gold;
+}
+.pressSpace{
+	font-size: 20px;
+	text-align:center;
+}

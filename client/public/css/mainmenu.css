@@ -10,48 +10,10 @@ body {
 	color: white;
 	background-color: black;
 }
-div.lineBreak1 {
-	display: block;
 }
-.alignHeaderTop {
-	position: relative;
-	top:30px;
-}
-div.alignHeaderLeft {
-	position: relative;
-	left: 100px;
-}
-div.alignOptionsLeft {
-	position: relative;
-	left: 100px;
-}
-div.left {
-	text-align: left;
-}
-div.headerFontSize {
-	font-size: 75px;
-}
-div.optionsFontSize {
-	font-size: 30px;
-}
-div.paddingRight {
-	padding-right: 900px;
-}
-@font-face {
-	font-family: yoster;
-	src: url("yoster");
-}
-
-div.cFont {
-	font-family: yoster;
-}
-a:visited {
-	color: gold;
-	background-color: transparent;
-	text-decoration: none;
-}
-a:unvisited {
-	color: green;
-	background-color: transparent;
-	text-decoration: none;
+.option{
+	font-size: 20px;
+	position: absolute;
+	left: 400px;
+	top: 400px;
 }
