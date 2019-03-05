@@ -1,10 +1,18 @@
 @font-face {
-	font-family: western;
-	src: url("/fonts/yoster.ttf");
+	font-family: custom1;
+	src: url("/fonts/font4.ttf");
 }
-.westernFont {
-	font-family: western;
+.customHeader {
+	font-family: custom1;
 }
+@font-face {
+	font-family: custom2;
+	src: url("/fonts/font2.ttf");
+}
+.customBody {
+	font-family: custom2;
+}
+
 .header {
 	font-size: 70px;
 	position: absolute;
@@ -39,8 +47,4 @@
 	left: 40px;
 	top: 450px;
 	color: gold;
-}
-.pressSpace{
-	font-size: 20px;
-	text-align:center;
 }

@@ -1,15 +1,18 @@
 body {	
-	background-image: url("../images/grass.png"); 
+	background-image: url("../images/grass0.png"); 
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 95%;
 	width: 98%;
 	color: white;
+	position: absolute;
+	top: 20px;
+	background-color: black;
 }
 .headerTopTen{
 	font-size: 40px;
 	position: absolute;
-	left: 34.8%;
+	left: 40.4%;
 	top: 10%;
 	color: forestgreen;
 }
@@ -40,7 +43,10 @@ body {
 	border: 5px;
 	color: crimson;
 }
-.pressSpace{
+.pressSpace {
 	font-size: 20px;
-	text-align:center;
+	position: absolute;
+	left: 37.2%;
+	top: 0px;
+	padding-top: 0px;
 }

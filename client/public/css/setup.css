@@ -1,9 +1,29 @@
 body {
-	background-image: url("../images/wagon.png"); 
+	margin: 0px;
+}
+#grad {
+	height: 696px;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 95%;
-	width: 98%;
-	color: white;
-	background-color: black;
+	background-color: red;
+	background-image: linear-gradient(steelblue, black);
 }
+.Wagon {
+	position: relative;
+	top: -765px;
+	left: -64px;
+	width: 50%;
+	height: 0px;
+	background-color: transparent;
+}
+.pressSpace1 {
+	font-size: 20px;
+	position: absolute;
+	left: 39.5%;
+	top:15px;
+	color: white;
+}
+
+
+
