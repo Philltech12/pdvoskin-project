@@ -17,10 +17,31 @@ body {
 	height: 0px;
 	background-color: transparent;
 }
-.pressSpace1 {
+.pressSpaceMessage {
 	font-size: 20px;
 	position: absolute;
 	left: 39.5%;
 	top:15px;
 	color: white;
+}
+.option4{
+	font-size: 30px;
+	position: absolute;
+	left: 215px;
+	top: 490px;
+	color: gold;
+}
+.option5{
+	font-size: 30px;
+	position: absolute;
+	left: 215px;
+	top: 470px;
+	color: gold;
+}
+.soundOption {
+	font-size: 30px;
+	position: absolute;
+	left: 45px;
+	top: 450px;
+	color: gold;
 }

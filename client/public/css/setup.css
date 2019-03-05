@@ -17,12 +17,13 @@ body {
 	height: 0px;
 	background-color: transparent;
 }
-.pressSpace1 {
+.pressSpaceMessage {
 	font-size: 20px;
 	position: absolute;
 	left: 39.5%;
 	top:15px;
 	color: white;
+	border: 3px solid transparent;
 }
 
 

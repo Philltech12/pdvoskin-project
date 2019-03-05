@@ -7,7 +7,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: red;
-	background-image: linear-gradient(cyan, orange);
+	background-image: linear-gradient(lightskyblue, orange);
 }
 .Wagon {
 	position: relative;
@@ -21,7 +21,7 @@ body {
 	position: absolute;
 	top: 30px;
 	left: 30px;
-	color: black;
+	color: white;
 	font-size: 20px;
 	border: 5px solid white;
 	border-radius: 20px;
@@ -29,6 +29,7 @@ body {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 75px;
+	background: black;
 }
 .statsBorder {
 	border: 10px solid black;

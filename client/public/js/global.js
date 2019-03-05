@@ -1,5 +1,5 @@
 document.body.onkeyup = function(spacePress){
-	if(spacePress.keyCode = 32){
+	if(spacePress.keyCode == 32){
 		window.location = "/mainmenu";
 	}
 }

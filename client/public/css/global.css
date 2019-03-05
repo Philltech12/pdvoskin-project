@@ -7,6 +7,7 @@
 }
 @font-face {
 	font-family: custom2;
+	font-weight: normal;
 	src: url("/fonts/font2.ttf");
 }
 .customBody {
@@ -39,12 +40,5 @@
 	position: absolute;
 	left: 40px;
 	top: 400px;
-	color: gold;
-}
-.option4{
-	font-size: 30px;
-	position: absolute;
-	left: 40px;
-	top: 450px;
 	color: gold;
 }

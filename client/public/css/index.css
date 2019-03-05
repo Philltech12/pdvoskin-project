@@ -24,4 +24,5 @@ body {
 	left: 37%;
 	font-size: 40px;
 	color: black;
+	border: 3px solid transparent;
 }
