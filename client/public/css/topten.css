@@ -10,18 +10,18 @@ body {
 	background-color: black;
 }
 .headerTopTen{
-	font-size: 40px;
+	font-size: 50px;
 	position: absolute;
-	left: 40.4%;
-	top: 10%;
-	color: forestgreen;
+	left: 38%;
+	top: 8%;
+	color: C158FE;
 }
 .optionsFontSize{
-	font-size: 20px;
+	font-size: 25px;
 }
 .alignLeftName{
 	position: absolute;
-	left: 500px;
+	left: 450px;
 	width: 20px;
 	top: 150px;
 	border: 5px;
@@ -29,15 +29,15 @@ body {
 }
 .alignLeftScore{
 	position: absolute;
-	left: 735px;
+	left: 720px;
 	width: 20px;
 	top: 150px;
 	border: 5px;
-	color: gold;
+	color: 3DE348;
 }
 .alignLeftDate{
 	position: absolute;
-	left: 960px;
+	left: 990px;
 	width: 20px;
 	top: 150px;
 	border: 5px;
@@ -49,4 +49,60 @@ body {
 	left: 37.2%;
 	top: 0px;
 	border: 3px solid transparent;
+}
+.scores {
+	font-size: 25px;
+}
+.score1 {
+	position: absolute;
+	left: 385px;
+	top: 240px;
+	color: gold;
+}
+.score2 {
+	position: absolute;
+	left: 385px;
+	top: 275px;
+	color: silver;
+}
+.score3 {
+	position: absolute;
+	left: 385px;
+	top: 310px;
+	color: cd7f32;
+}
+.score4 {
+	position: absolute;
+	left: 385px;
+	top: 345px;
+}
+.score5 {
+	position: absolute;
+	left: 385px;
+	top: 380px;
+}
+.score6 {
+	position: absolute;
+	left: 385px;
+	top: 415px;
+}
+.score7 {
+	position: absolute;
+	left: 385px;
+	top: 450px;
+}
+.score8 {
+	position: absolute;
+	left: 385px;
+	top: 485px;
+}
+.score9 {
+	position: absolute;
+	left: 385px;
+	top: 520px;
+}
+.score10 {
+	position: absolute;
+	left: 385px;
+	top: 555px;
 }
