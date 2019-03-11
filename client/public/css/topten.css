@@ -1,5 +1,5 @@
-body {	
-	background-image: url("../images/grass0.png"); 
+body {
+	background-image: url("../images/grass0.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 95%;
@@ -105,4 +105,18 @@ body {
 	position: absolute;
 	left: 385px;
 	top: 555px;
+}
+table{
+	position: absolute;
+	left: 22.5%;
+	color: white;
+	margin: 0px;
+	padding-top: 215px;
+	font-size: 25px;
+	font-family: custom2;
+}
+td {
+	padding-left: 109px;
+	padding-right: 109px;
+	padding-bottom: 8px;
 }
