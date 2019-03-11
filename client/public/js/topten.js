@@ -1,3 +1,41 @@
+var topTen = [
+  ['Bill', 800, '3/1/2019'],
+  ['Jill', 200, '3/2/2019'],
+  ['Phill', 1000, '3/3/2019'],
+  ['Mill', 700, '3/4/2019'],
+  ['Krill', 600, '3/5/2019'],
+  ['Bob', 300, '3/6/2019'],
+  ['Rob', 400, '3/7/2019'],
+  ['Job', 500, '3/8/2019'],
+  ['Lob', 900, '3/9/2019'],
+  ['Sob', 100, '3/10/2019']
+]
+
+topTen.sort(function(a, b){
+    var x = a[1];
+    var y = b[1];
+    return y - x;
+});
+
+var topTenTable = document.getElementById('topTenTable');
+var table = document.createElement('table');
+var tbody = document.createElement('tbody');
+
+for (i = 0; i < 10; i++){
+    var vals = topTen[i];
+    var row = document.createElement('tr');
+    var cell = document.createElement('td');
+    cell.textContent = i + 1;
+    row.appendChild(cell);
+    for (var b = 0; b < vals.length; b++){
+        var cell = document.createElement('td');
+        cell.textContent = vals[b];
+        row.appendChild(cell);
+    }
+    tbody.appendChild(row);
+}
+table.appendChild(tbody);
+topTenTable.appendChild(table);
 /*
 var myArray = [
   ['Bill', 1000, '3/1/2019'],
@@ -12,7 +50,9 @@ var myArray = [
   ['Sob', 100, '3/10/2019']
 ];
 */
-createTable([['Bill', 800, '3/1/2019'],
+/*
+createTable([
+['Bill', 800, '3/1/2019'],
 ['Jill', 200, '3/2/2019'],
 ['Phill', 1000, '3/3/2019'],
 ['Mill', 700, '3/4/2019'],
@@ -38,7 +78,7 @@ function createTable(tableData) {
       });
       document.body.appendChild(table);
     }
-
+*/
 /*
 topTen.sort(function(a, b){
     var x = a[1];

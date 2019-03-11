@@ -21,7 +21,7 @@ body {
 }
 .alignLeftName{
 	position: absolute;
-	left: 450px;
+	left: 448px;
 	width: 20px;
 	top: 150px;
 	border: 5px;
@@ -37,7 +37,7 @@ body {
 }
 .alignLeftDate{
 	position: absolute;
-	left: 990px;
+	left: 1013px;
 	width: 20px;
 	top: 150px;
 	border: 5px;
@@ -53,59 +53,92 @@ body {
 .scores {
 	font-size: 25px;
 }
+#blackbox {
+	z-index: 1;
+	position: absolute;
+	top: 220px;
+	left: 180px;
+	width: 50px;
+	height: 400px;
+	background-color: black;
+}
+
+#topTenTable{
+    text-align: center;
+	font-size: 32px;
+}
+
+table{
+	font-family: custom2;
+    position: absolute;
+		left: 5.5%;
+    font-size: 20px;
+    color: white;
+    margin: 0 auto;
+    padding-top: 220px;
+}
+
+td{
+    padding-left: 116px;
+    padding-right: 116px;
+    padding-bottom: 15px;
+}
+
 .score1 {
 	position: absolute;
 	left: 385px;
-	top: 240px;
+	top: 241px;
 	color: gold;
 }
 .score2 {
 	position: absolute;
 	left: 385px;
-	top: 275px;
+	top: 277px;
 	color: silver;
 }
 .score3 {
 	position: absolute;
 	left: 385px;
-	top: 310px;
+	top: 315px;
 	color: cd7f32;
 }
 .score4 {
 	position: absolute;
 	left: 385px;
-	top: 345px;
+	top: 350px;
 }
 .score5 {
 	position: absolute;
 	left: 385px;
-	top: 380px;
+	top: 388px;
 }
 .score6 {
 	position: absolute;
 	left: 385px;
-	top: 415px;
+	top: 423px;
 }
 .score7 {
 	position: absolute;
 	left: 385px;
-	top: 450px;
+	top: 460px;
 }
 .score8 {
 	position: absolute;
 	left: 385px;
-	top: 485px;
+	top: 498px;
 }
 .score9 {
 	position: absolute;
 	left: 385px;
-	top: 520px;
+	top: 535px;
 }
 .score10 {
 	position: absolute;
 	left: 385px;
-	top: 555px;
+	top: 572px;
 }
+
+/*
 table{
 	position: absolute;
 	left: 22.5%;
@@ -120,3 +153,4 @@ td {
 	padding-right: 109px;
 	padding-bottom: 8px;
 }
+*/
