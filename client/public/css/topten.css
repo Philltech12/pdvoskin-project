@@ -12,9 +12,9 @@ body {
 .headerTopTen{
 	font-size: 50px;
 	position: absolute;
-	left: 38%;
-	top: 8%;
-	color: C158FE;
+	left: 40%;
+	top: 15%;
+	color: C389D2;
 }
 .optionsFontSize{
 	font-size: 25px;
@@ -23,23 +23,23 @@ body {
 	position: absolute;
 	left: 448px;
 	width: 20px;
-	top: 150px;
+	top: 190px;
 	border: 5px;
 	color: deepskyblue;
 }
 .alignLeftScore{
 	position: absolute;
-	left: 720px;
+	left: 757px;
 	width: 20px;
-	top: 150px;
+	top: 190px;
 	border: 5px;
 	color: 3DE348;
 }
 .alignLeftDate{
 	position: absolute;
-	left: 1013px;
+	left: 1029px;
 	width: 20px;
-	top: 150px;
+	top: 190px;
 	border: 5px;
 	color: crimson;
 }
@@ -47,8 +47,9 @@ body {
 	font-size: 20px;
 	position: absolute;
 	left: 37.2%;
-	top: 0px;
+	bottom: 90px;
 	border: 3px solid transparent;
+	color: FEAA72;
 }
 .scores {
 	font-size: 25px;
@@ -69,10 +70,10 @@ body {
 }
 
 table{
-	font-family: custom2;
+	font-family: customBodyPixel;
     position: absolute;
 		left: 5.5%;
-    font-size: 20px;
+    font-size: 21px;
     color: white;
     margin: 0 auto;
     padding-top: 220px;
@@ -81,7 +82,7 @@ table{
 td{
     padding-left: 116px;
     padding-right: 116px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .score1 {
@@ -93,64 +94,47 @@ td{
 .score2 {
 	position: absolute;
 	left: 385px;
-	top: 277px;
+	top: 273.5px;
 	color: silver;
 }
 .score3 {
 	position: absolute;
 	left: 385px;
-	top: 315px;
+	top: 306.8px;
 	color: cd7f32;
 }
 .score4 {
 	position: absolute;
 	left: 385px;
-	top: 350px;
+	top: 338.3px;
 }
 .score5 {
 	position: absolute;
 	left: 385px;
-	top: 388px;
+	top: 371px;
 }
 .score6 {
 	position: absolute;
 	left: 385px;
-	top: 423px;
+	top: 404px;
 }
 .score7 {
 	position: absolute;
 	left: 385px;
-	top: 460px;
+	top: 437px;
 }
 .score8 {
 	position: absolute;
 	left: 385px;
-	top: 498px;
+	top: 470px;
 }
 .score9 {
 	position: absolute;
 	left: 385px;
-	top: 535px;
+	top: 503px;
 }
 .score10 {
 	position: absolute;
 	left: 385px;
-	top: 572px;
+	top: 536px;
 }
-
-/*
-table{
-	position: absolute;
-	left: 22.5%;
-	color: white;
-	margin: 0px;
-	padding-top: 215px;
-	font-size: 25px;
-	font-family: custom2;
-}
-td {
-	padding-left: 109px;
-	padding-right: 109px;
-	padding-bottom: 8px;
-}
-*/

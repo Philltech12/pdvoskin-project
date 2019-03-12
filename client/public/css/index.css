@@ -7,16 +7,16 @@ body {
 	background-size: cover;
 	height: 97%;
 	width: 98%;
-	
+
 }
 .headerIndex {
 	position: absolute;
 	left: 50%;
-	top: 15%;
+	top: 25%;
 	width: 100%;
-	font-size: 60px;
+	font-size: 100px;
 	transform: translate(-50%, -50%);
-	Color: white;
+	Color: FEAA72;
 }
 .fadingMessage {
 	position: absolute;

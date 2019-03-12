@@ -20,11 +20,9 @@ body {
 .pressSpaceMessage {
 	font-size: 20px;
 	position: absolute;
-	left: 39.5%;
-	top:15px;
-	color: white;
+	/*left: 39.5%;*/
+	left: 40px;
+	bottom: 265px;
+	color: FEAA72;
 	border: 3px solid transparent;
 }
-
-
-

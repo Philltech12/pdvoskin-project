@@ -1,25 +1,39 @@
 @font-face {
-	font-family: custom1;
-	src: url("/fonts/font4.ttf");
+	font-family: customHeaderAlt;
+	src: url("/fonts/font5.ttf");
 }
-.customHeader {
-	font-family: custom1;
+.customHeaderAlt {
+	font-family: customHeaderAlt;
 }
 @font-face {
-	font-family: custom2;
-	font-weight: normal;
+	font-family: customBodyPixel;
 	src: url("/fonts/font2.ttf");
 }
-.customBody {
-	font-family: custom2;
+.customBodyPixel {
+	font-family: customBodyPixel;
+	font-weight: normal;
 }
-
+@font-face {
+	font-family: customHeader;
+	src: url("/fonts/font6.ttf");
+}
+.customHeader {
+	font-family: customHeader;
+	font-weight: normal;
+}
+@font-face {
+	font-family: customTop;
+	src: url("/fonts/font7.ttf");
+}
+.customTop {
+	font-family: customTop;
+}
 .header {
-	font-size: 70px;
+	font-size: 50px;
 	position: absolute;
 	left: 40px;
-	top: 150px;
-	color: C158FE;
+	top: 200px;
+	color: C389D2;
 }
 .option1{
 	font-size: 30px;
@@ -42,3 +56,12 @@
 	top: 400px;
 	color: gold;
 }
+.OregonTrailHeader{
+	font-size: 73px;
+	position: absolute;
+	color:FEAA72;
+	top: 0px;
+	left: 34%;
+}
+.fadePressSpace{animation:fading 1.1s infinite}
+@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
