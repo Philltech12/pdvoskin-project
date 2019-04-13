@@ -9,7 +9,22 @@ exports.getGameData = function(req, res) {
   res.setHeader('Content-Type','application/json');
   res.send(exports.currentGameData);
 }
+/*
+exports.getData = function() {
+  return exports.currentGameData;
+}
 
+exports.currentTopTen = topTen.addScore();
+
+exports.getTopScore = function(req, res) {
+  res.setHeader('Content-Type','application/json');
+  res.send(exports.addScore);
+}
+
+exports.addScore = function() {
+  return exports.currentTopTen;
+}
+*/
 exports.updateGameData = function(req, res) {
   res.currentGameData.currentWeather = weather.getRandomWeather();
   res.currentGameData.currentTerrain = terrain.getTerrain();
@@ -43,7 +58,17 @@ else if(exports.currentGameData.groupHealth <= 20) {
       i--;
     }
     exports.currentGameData.playerStatus[i] = true;
-    exports.currentGameData.messages = "A member of your group has died!"
+    exports.currentGameData.messages = "A member of your group has perished!";
+  }
+}
+else if(exports.currentGameData.groupHealth > 50) {
+  if(deathChance <= 3) {
+    var i = 4;
+    while(exports.currentGameData.playerStatus[i] == true) {
+      i--;
+    }
+    exports.currentGameData.playerStatus[i] = true;
+    exports.currentGameData.messages = "A member of your group has perished!";
   }
 }
 else {
@@ -54,7 +79,7 @@ res.setHeader('Content-Type', 'application/json');
 res.send(exports.currentGameData);
 }
 exports.resetGameData = function(req, res) {
-  exports.currentGameData = gameData.gameData();
+  exports.currentGameData = gameData.getData();
   res.setHeader('Content-Type', 'application/json');
   res.send(exports.currentGameData);
 }

@@ -9,11 +9,11 @@ app.use(bodyParser.json({type:'application/json'}));
 var topTen = require('./controllers/topTenController');
 
 app.route('/api/topTen')
-	.get(topTen.getCurrentScores);
-
+	.get(topTen.getTopScore);
+/*
 app.route('/api/topTen')
 	.post(topTen.saveTopScore);
-
+*/
 var gameData = require('./controllers/gameController');
 
 var setup = require('./controllers/setupController');
@@ -26,30 +26,33 @@ app.route('/api/update')
 
 app.route('/api/reset')
 	.get(gameData.resetGameData);
-
+/*
 app.route('/api/getProfession/profession')
 	.get(gameData.currentGameData.playerProfession);
-
-app.route('/api/setProfession/:id')
-	.post(setup.Profession);
-
+*/
+app.route('/api/saveProfession/:id')
+	.post(setup.saveProfession);
+/*
 app.route('/api/getPlayerNames/player')
-	.get(setup.setPlayerNames);
-
-app.route('/api/setPlayerNames/:names')
-	.post(setup.setPlayerNames);
-
+	.get(setup.savePlayerName);
+*/
+app.route('/api/savePlayerName/:names')
+	.post(setup.savePlayerName);
+/*
 app.route('/api/getStartMonth/month')
-	.get(setup.setStartMonth);
-
-app.route('/api/setStartMonth/:id')
-	.post(setup.setStartMonth);
+	.get(setup.saveStartMonth);
+*/
+app.route('/api/saveStartMonth/:id')
+	.post(setup.saveStartMonth);
 
 app.route('/api/getPace/pace')
 		.get(gameData.getPace);
 
 app.route('/api/setPace/pace/:id')
 	.post(gameData.setPace);
+
+app.route('/api/setup/:id')
+	.get(setup.getSetupScreen);
 
 app.get('/plains', function(req, res) {
 	res.sendFile('plainsTerrain.jpg', {root: 'client/public/images'})
