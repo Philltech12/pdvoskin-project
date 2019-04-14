@@ -3,7 +3,8 @@ var terrain = require('./terrain');
 var weather = require('./weather');
 
 function gameData(names, status, profession, money, month, traveled, myhealth, mypace, days, myweather, myterrain, message) {
-  this.playerNames = [];
+  //this.playerNames = [];
+  this.playerNames = ["Phill", "Patrick", "Ali", "James", "Peanut"];
   this.playerStatus = [false, false, false, false, false];
   this.playerProfession = "";
   this.playerMoney = 0;

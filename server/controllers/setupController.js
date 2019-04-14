@@ -2,7 +2,12 @@ var gameData = require('../models/gameData');
 var profession = require('../models/profession');
 var gameController = require('../controllers/gameController');
 
-exports.currentGameData = gameController.getData();
+exports.currentGameData = gameData.getData();
+
+exports.getAllPlayerNames = function(req, res) {
+  res.setHeader('Content-Type', 'application/json');
+  res.send(exports.currentGameData.playerNames);
+}
 
 exports.savePlayerName = function(req, res) {
   exports.currentGameData.playerNames.push(req.params.names);
@@ -12,7 +17,7 @@ exports.savePlayerName = function(req, res) {
 
 exports.saveProfession = function(req, res) {
   var work = professions.getAllProfessions()[req.params.id];
-  console.log(picked)
+  console.log(chosen)
   exports.currentGameData.playerProfession = work.name;
   exports.currentGameData.playerMoney = work.money;
   res.setHeader('Content-Type', 'application/json');
@@ -38,19 +43,19 @@ var screen1 = "<p>Choose your Profession</p>"
     + "<li id=\"differencesChoice\" >Find out the differences</li>"
     + "</ol>"
     + "<p id=\"selectedOption\" >Which would you like to choose?</p>"
-    + "<form action=\"oregonTrail\" method=\"POST\">"
+    + "<form>"
     + "<input type = \"text\" id = \"selection\">"
     + "<input type = \"button\" id = \"submit\" value = \"Submit\" />"
     + "</form>";
 
 var screen2 = "<p>Enter your wagon leader's name</p>"
-    + "<form action=\"oregonTrail.js\" method=\"POST\">"
+    + "<form>"
     + "<input type = \"text\" id = \"selection\">"
     + "<input type = \"button\" id = \"submit\" value = \"Submit\" />"
     + "</form>";
 
 var screen3 = "<p>Enter the rest of your wagon members' names</p>"
-    + "<form action=\"oregonTrail.js\" method=\"POST\">"
+    + "<form>"
     + "<input type = \"text\" id = \"member1\"><br />"
     + "<input type = \"text\" id = \"member2\"><br />"
     + "<input type = \"text\" id = \"member3\"><br />"
@@ -58,7 +63,30 @@ var screen3 = "<p>Enter the rest of your wagon members' names</p>"
     + "<input type = \"button\" id = \"submit\" value = \"Submit\" />"
     + "</form>";
 
-var screen4 = "<p>screen4</p>"
+var screen4 = "<p>Select your start month</p>"
+    + "<ol id=\"months\">"
+    + "<li id=\"march\">March</li>"
+    + "<li id=\"april\">April</li>"
+    + "<li id=\"may\">May</li>"
+    + "<li id=\"june\">June</li>"
+    + "</ol>"
+    + "<form>"
+    + "<input type = \"text\" id = \"selection\">"
+    + "<input type = \"button\" id = \"submit\" value = \"Submit\" />"
+    + "</form>";
+
+var screen5 = "<p>Congratulations! You're ready to travel the trail!</p>"
+    + "<p>Your selections:</p>"
+    + "<br/ >"
+    + "<p>Profession: " + exports.currentGameData.playerProfession + "</p><br />"
+    + "<p>Starting money: " + exports.currentGameData.playerMoney + "</p><br />"
+    + "<p>Caravan leader: " + exports.currentGameData.playerNames[0] + "</p><br />"
+    + "<p>Member 1: " + exports.currentGameData.playerNames[1] + "</p><br />"
+    + "<p>Member 2: " + exports.currentGameData.playerNames[2] + "</p><br />"
+    + "<p>Member 3: " + exports.currentGameData.playerNames[3] + "</p><br />"
+    + "<p>Member 4: " + exports.currentGameData.playerNames[4] + "</p><br />"
+    + "<p>Start month: " + exports.currentGameData.startMonth + "</p><br />"
+
 
 exports.setupScreens.push(screen1);
 exports.setupScreens.push(screen2);

@@ -10,13 +10,17 @@ var topTen = require('./controllers/topTenController');
 
 app.route('/api/topTen')
 	.get(topTen.getTopScore);
-/*
+
 app.route('/api/topTen')
 	.post(topTen.saveTopScore);
-*/
+
 var gameData = require('./controllers/gameController');
 
-var setup = require('./controllers/setupController');
+app.route('/api/getPace/pace')
+		.get(gameData.getPace);
+
+app.route('/api/setPace/pace/:id')
+	.post(gameData.setPace);
 
 app.route('/api/data')
 	.get(gameData.getGameData);
@@ -26,33 +30,37 @@ app.route('/api/update')
 
 app.route('/api/reset')
 	.get(gameData.resetGameData);
+
+app.route('/api/nextDay')
+	.get(gameData.nexDay)
+	
+var setup = require('./controllers/setupController');
+
+app.route('api/setup/player')
+	.get(setup.getAllPlayerNames);
+
+app.route('/api/setup/:id')
+	.get(setup.getSetupScreen);
+
+app.route('/api/saveProfession/:id')
+	.post(setup.saveProfession);
+	/*
+	app.route('/api/getPlayerNames/player')
+		.get(setup.savePlayerName);
+	*/
+app.route('/api/savePlayerName/:names')
+	.post(setup.savePlayerName);
+	/*
+	app.route('/api/getStartMonth/month')
+		.get(setup.saveStartMonth);
+	*/
+app.route('/api/saveStartMonth/:id')
+	.post(setup.saveStartMonth);
+
 /*
 app.route('/api/getProfession/profession')
 	.get(gameData.currentGameData.playerProfession);
 */
-app.route('/api/saveProfession/:id')
-	.post(setup.saveProfession);
-/*
-app.route('/api/getPlayerNames/player')
-	.get(setup.savePlayerName);
-*/
-app.route('/api/savePlayerName/:names')
-	.post(setup.savePlayerName);
-/*
-app.route('/api/getStartMonth/month')
-	.get(setup.saveStartMonth);
-*/
-app.route('/api/saveStartMonth/:id')
-	.post(setup.saveStartMonth);
-
-app.route('/api/getPace/pace')
-		.get(gameData.getPace);
-
-app.route('/api/setPace/pace/:id')
-	.post(gameData.setPace);
-
-app.route('/api/setup/:id')
-	.get(setup.getSetupScreen);
 
 app.get('/plains', function(req, res) {
 	res.sendFile('plainsTerrain.jpg', {root: 'client/public/images'})

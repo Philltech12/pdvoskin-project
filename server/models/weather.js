@@ -18,22 +18,60 @@ allWeathers.push(new weather(7, "Heavy Rain", -8, .4, 5));
 allWeathers.push(new weather(8, "Snow", -15, .3, 5));
 allWeathers.push(new weather(9, "Blizzard", -30, .1, 5));
 allWeathers.push(new weather(10, "Heavy Fog", -3, .5, 5));
-
+/*
 exports.getRandomWeather = function() {
     var num = Math.floor(Math.random() * 100) + 1;
     var probTotal = 0;
     var i = 0;
-    var pick = false;
-    while(!pick) {
+    var chosen = false;
+    while(!chosen) {
       probTotal += allWeathers[i].prob;
       if(num <= probTotal) {
-        pick = true;
+        chosen = true;
       }
       else {
         i++;
       }
     }
     return allWeathers[i];
+}
+*/
+exports.getRandomWeather = function() {
+    var rNum = Math.floor(Math.random() * 100) + 1;
+    if(rNum <= 10) {
+      return allWeathers[0];//very hot
+    }
+    else if (rNum > 10 && rNum <= 20) {
+      return allWeathers[1];//hot
+    }
+    else if (rNum > 20 && rNum <= 40) {
+      return allWeathers[2];//warm
+    }
+    else if (rNum > 40 && rNum <= 50) {
+      return allWeathers[3];//cool
+    }
+    else if (rNum > 50 && rNum <= 60) {
+      return allWeathers[4];//cold
+    }
+    else if (rNum > 60 && rNum <= 70) {
+      return allWeathers[5];//very cold
+    }
+    else if (rNum > 70 && rNum <= 80) {
+      return allWeathers[6];//rain
+    }
+    else if (rNum > 80 && rNum <= 85) {
+      return allWeathers[7];//heavy rain
+    }
+    else if (rNum > 85 && rNum <= 90) {
+      return allWeathers[8];//snow
+    }
+    else if (rNum > 90 && rNum <= 95) {
+      return allWeathers[9];//blizzard
+    }
+    else if (rNum > 95 && rNum <= 100) {
+      return allWeathers[10];//heavy fog
+    }
+
 }
 
 exports.getAllWeathers = function() {

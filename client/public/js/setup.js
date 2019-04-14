@@ -1,10 +1,9 @@
-/*
 document.body.onkeyup = function(spacePress){
 	if(spacePress.keyCode == 32){
 		window.location = "/mainmenu";
 	}
 }
-*/
+
 var gameContainer = document.getElementById('setupContent');
 getScreen(0);
 var currentScreen = 0;
