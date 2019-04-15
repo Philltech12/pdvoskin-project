@@ -10,7 +10,7 @@ exports.getGameData = function(req, res) {
   res.send(exports.currentGameData);
 }
 
-exports.nextDay = function (req, res) {
+exports.nextDay = function(req, res) {
   res.setHeader('Content-Type','application/json');
   res.send(exports.currentGameData.daysOnTrail);
 }
@@ -69,7 +69,6 @@ exports.updateGameData = function(req, res) {
   else {
     exports.currentGameData.messages = "Your group is lives on another day"
   }
-
   res.setHeader('Content-Type', 'application/json');
   res.send(exports.currentGameData);
   }

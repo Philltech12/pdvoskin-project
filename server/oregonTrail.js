@@ -30,10 +30,10 @@ app.route('/api/update')
 
 app.route('/api/reset')
 	.get(gameData.resetGameData);
-
+/*
 app.route('/api/nextDay')
 	.get(gameData.nexDay)
-	
+*/
 var setup = require('./controllers/setupController');
 
 app.route('api/setup/player')
@@ -50,10 +50,10 @@ app.route('/api/saveProfession/:id')
 	*/
 app.route('/api/savePlayerName/:names')
 	.post(setup.savePlayerName);
-	/*
+/*
 	app.route('/api/getStartMonth/month')
 		.get(setup.saveStartMonth);
-	*/
+*/
 app.route('/api/saveStartMonth/:id')
 	.post(setup.saveStartMonth);
 
