@@ -1,39 +1,41 @@
 <html>
 
-	<link rel= "stylesheet" href="/css/trail.css">
-	<link rel= "stylesheet" href="/css/global.css">
-	<link rel= "stylesheet" href="/js/global.js">
-
-	<div id="grad1"></div>
-
 	<head>
-		<h1>
-
-		</h1>
+			<link rel= "stylesheet" href="/css/trail.css">
+			<link rel= "stylesheet" href="/css/global.css">
 	</head>
 
 	<body>
-		<div class="Wagon">
-			<img src="/images/Wagon.png" height="800" width="1600">
+		
+			<img src="/images/swagon.png" height = 300px width=600px id="swagon"/>
+
+		<div id = "deathBox"><p>Your party has died</p><br/>
+			<p>Press 1 to Restart</p><br/>
+			<p>Press 2 to Quit</p>
 		</div>
+
+		<div id = "winBox"><p>Congrats! You won!</p><br/>
+			<p>Press Enter to</p><br/>
+			<p>Return to the</p><br/>
+			<p>Main Menu</p>
+		</div>
+
 		<p1>
 			<div class="customBodyPixel">
-				<div class="stats">
-					Days on trail:
-					</br>
-					Miles traveled :
-					</br>
-					Party health status :
-					</br>
-					Current weather :
-					</br>
-					Current pace :
-					</br>
-					Current terrain :
-					</br>
-					# of party members alive :
+				<div id="gameinfo">
+						<p>Days On Trail: <p id = "days"></p></p>
+						<p>Miles Traveled: <p id = "miles"></p></p>
+						<p>Party Health: <p id = "health"></p></p>
+						<p>Current Weather: <p id = "weather"></p></p>
+						<p>Current Pace: <p id = "pace"></p></p>
+						<p>Current Terrain: <p id = "terrain"></p></p>
+						<p>Party Members Alive: <p id = "memberStatus"></p></p>
+						<p>Message: <p id = "message"></p></p>
 				</div>
 			</div>
 		</p1>
+		<!--<script type="text/javascript" src="/js/global.js"></script>-->
+		<script type="text/javascript" src="/js/trail.js"></script>
 	</body>
+
 </html>

@@ -1,28 +1,57 @@
 body {
-	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	background-color: lightskyblue;
+	border-bottom: 20px;
+
 }
-#grad {
-	height: 696px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: red;
-	background-image: linear-gradient(steelblue, black);
+h1 {
+	color: black;
+	text-decoration: underline;
+}
+ol {
+	color: black;
+	text-align: center;
+	padding-left: 16px;
+
+}
+li {
+	color: black;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+h2 {
+	color: black;
+
+}
+p1 {
+	color: black;
+	font-size: 20px;
+	text-align: center;
+	top: 100px;
+	position: absolute;
+}
+input {
+	padding: 5px;
 }
 .Wagon {
 	position: relative;
-	top: -765px;
-	left: -64px;
+	top: -65px;
+	left: -404px;
 	width: 50%;
 	height: 0px;
 	background-color: transparent;
+	border-bottom: 20px;
 }
 .pressSpaceMessage {
 	font-size: 20px;
 	position: absolute;
-	/*left: 39.5%;*/
-	left: 40px;
-	bottom: 265px;
+	left: 40%;
+	bottom: 0px;
 	color: FEAA72;
 	border: 3px solid transparent;
 }

@@ -1,3 +1,14 @@
+document.addEventListener("keydown", function(event) {
+	if(event.keyCode == 32) {
+		window.location = "mainmenu";
+	}
+})
+
+playerList.sort((a,b) => b.score - a.score).forEach((Player, ind) => {
+	$("#list").append(`${ind + 1}) ${Object.values(Player).join(" | ")} <br />`);
+})
+
+/*
 var topTen = [
   ['Bill', 7276, '1/1/2019'],
   ['Jill', 2656, '3/3/2019'],
@@ -36,3 +47,4 @@ for (i = 0; i < 10; i++){
 }
 table.appendChild(tbody);
 topTenTable.appendChild(table);
+*/

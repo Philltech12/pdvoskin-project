@@ -4,9 +4,9 @@ function profession(name, money) {
 }
 
 var allProfessions = []
-allProfessions.push(new profession("Banker", 900));
-allProfessions.push(new profession("Carpenter", 600));
-allProfessions.push(new profession("Farmer", 300));
+allProfessions.push(new profession("Banker", 2000));
+allProfessions.push(new profession("Carpenter", 1800));
+allProfessions.push(new profession("Farmer", 1500));
 
 exports.getAllProfessions = function() {
   return allProfessions;
