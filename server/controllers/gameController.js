@@ -12,6 +12,7 @@ exports.getGameData = function(req, res) {
 
 exports.updateGameData = function(req, res) {
     exports.currentData.currentTerrain = terrain.getTerrain();
+    console.log(exports.currentData.currentTerrain);
     exports.currentData.currentWeather = weather.getRandomWeather();
 
     exports.currentData.daysOnTrail++;

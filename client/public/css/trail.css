@@ -5,16 +5,23 @@ body {
 	max-height: 200px;
 	vertical-align: top;
 }
-.swagon {
-	position: relative;
-	top: 500px;
-	left: 1000px;
+
+#background {
+	border: 0px;
+	display: flex;
+	background-size: cover;
+	height: 100%;
+	width: 99%;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -200px;
 }
 
 #swagon {
-	position: absolute;
-	top: 425px;
-	right: 100px;
+	position: relative;
+	top: 449px;
+	left: 0px;
 
 }
 
@@ -23,15 +30,17 @@ body {
 	flex-direction: column;
 	align-items: center;
 	visibility: hidden;
-	border-style: dashed;
-	border-width: 4px;
+	border-style: ridge;
+	border-width: 5px;
 	height: 300px;
 	width: 300px;
 	background-color: black;
-	border-color: white;
+	border-color: cyan;
 	color: white;
 	font-size: 16pt;
 	justify-content: center;
+	position: absolute;
+	top: 0px;
 }
 
 #winBox {
@@ -39,28 +48,43 @@ body {
 	flex-direction: column;
 	align-items: center;
 	visibility: hidden;
-	border-style: dashed;
-	border-width: 4px;
+	border-style: ridge;
+	border-width: 5px;
 	height: 300px;
 	width: 300px;
 	background-color: black;
-	border-color: white;
+	border-color: cyan;
 	color: white;
 	font-size: 16pt;
 	justify-content: center;
+	position: absolute;
 }
 #gameinfo {
 	background-color: black;
 	color: white;
-	border-style: solid;
+	border-style: ridge;
 	border-width: 5px;
-	border-color: orange;
+	border-color: cyan;
 	height:175px;
-	width: 100%;
+	width: 98.35%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	position: absolute;
+	top: 554px;
+	right: 7px;
+}
+.playBox {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	font-size: 20px;
+	color: white;
+	border: 5px solid cyan;
+	border-style: ridge;
+	padding: 5px;
+	background: black;
 }
 .stats {
 	position: absolute;

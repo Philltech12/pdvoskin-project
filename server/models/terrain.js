@@ -1,13 +1,13 @@
-function terrain(type, image) {
-  this.type = type;
+function terrain(name, image) {
+  this.name = name;
   this.image = image;
 }
 
 var allTerrains = [];
-allTerrains.push(new terrain("Plains", "images/plainsTerrain"));
-allTerrains.push(new terrain("Swamp", "images/swampTerrain"));
-allTerrains.push(new terrain("Tundra", "images/tundraTerrain"));
-allTerrains.push(new terrain("Desert", "images/desertTerrain"));
+allTerrains.push(new terrain("Plains", "/images/plainsTerrain.jpg"));
+allTerrains.push(new terrain("Swamp", "/images/swampTerrain.jpg"));
+allTerrains.push(new terrain("Tundra", "/images/tundraTerrain.jpg"));
+allTerrains.push(new terrain("Desert", "/images/desertTerrain.jpg"));
 
 // add a treasure map event for each terrain
 

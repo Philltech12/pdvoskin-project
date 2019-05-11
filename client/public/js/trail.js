@@ -104,12 +104,13 @@ function changePace() {
 function displayData(info) {
 	document.getElementById('days').innerHTML = info.daysOnTrail;
 	document.getElementById('miles').innerHTML = info.milesTraveled;
-	var percent = ((info.milesTraveled / 500) * 10);
+	var percent = ((info.milesTraveled / 500) * 100);
 	document.getElementById('swagon').style.left = percent + "%";
 	document.getElementById('health').innerHTML = info.groupHealth;
 	document.getElementById('weather').innerHTML = info.currentWeather.type;
 	document.getElementById('pace').innerHTML = info.currentPace.name;
 	document.getElementById('terrain').innerHTML = info.currentTerrain.name;
+	console.log(info.currentTerrain);
 	document.getElementById('memberStatus').innerHTML = (function() {
 		let aliveCount = 0
 		for (let i = 0; i < info.playerStatus.length;i++) {
