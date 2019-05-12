@@ -40,6 +40,9 @@ document.body.onkeyup = function(keyPress){
 	if(keyPress.keyCode == 49){
 		window.location = "/setup";
 	}
+	else if (keyPress.keyCode == 50) {
+		window.location = "/learn";
+	}
 	else if(keyPress.keyCode == 51) {
 		window.location = "/topten";
 	}
@@ -47,5 +50,3 @@ document.body.onkeyup = function(keyPress){
 		menuSound();
 	}
 }
-
- 

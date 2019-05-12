@@ -1,0 +1,40 @@
+body {
+  margin: 0px;
+}
+#grad1 {
+  height: 753px;
+  background-image: linear-gradient(royalblue, lightskyblue);
+}
+.smallHeader {
+  position: absolute;
+  top: 130px;
+  left: 41.5%;
+  font-size: 30px;
+  color: black;
+}
+.pressSpaceMessage {
+	font-size: 27px;
+	position: absolute;
+	left: 37%;
+	bottom: 12px;
+	color: Black;
+	border: 3px solid transparent;
+}
+.box {
+  border-style: ridge;
+  border-color: FEAA72;
+  border-width: 10px;
+  background-color: black;
+  height: 430px;
+  width: 1000px;
+  top: 220px;
+  left: 17%;
+  position: absolute;
+}
+.inBox {
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 26.7px;
+  margin: 21px;
+}
