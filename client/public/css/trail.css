@@ -58,6 +58,7 @@ body {
 	font-size: 16pt;
 	justify-content: center;
 	position: absolute;
+	top: 0px;
 }
 #gameinfo {
 	background-color: black;
