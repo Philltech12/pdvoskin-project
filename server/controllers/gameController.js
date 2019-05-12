@@ -13,7 +13,16 @@ exports.getGameData = function(req, res) {
 exports.updateGameData = function(req, res) {
     exports.currentData.currentTerrain = terrain.getTerrain();
     console.log(exports.currentData.currentTerrain);
-    exports.currentData.currentWeather = weather.getRandomWeather();
+    if(exports.currentData.currentTerrain.name == "Plains") {
+        exports.currentData.currentWeather = weather.getPlainsWeather();
+    } else if(exports.currentData.currentTerrain.name == "Swamp") {
+        exports.currentData.currentWeather = weather.getSwampWeather();
+    } else if(exports.currentData.currentTerrain.name == "Tundra") {
+        exports.currentData.currentWeather = weather.getTundraWeather();
+    } else if(exports.currentData.currentTerrain.name == "Desert") {
+        exports.currentData.currentWeather = weather.getDesertWeather();
+    }
+    //exports.currentData.currentWeather = weather.getRandomWeather();
 
     exports.currentData.daysOnTrail++;
     exports.currentData.milesTraveled += Math.floor(exports.currentData.currentPace.miles * exports.currentData.currentWeather.miles);

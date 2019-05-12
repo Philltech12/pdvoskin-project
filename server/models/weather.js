@@ -46,15 +46,6 @@ desertWeathers.push(new weather(2, "Warm", 1, 1, 40));
 desertWeathers.push(new weather(3, "Cool", 1, .95, 15));
 desertWeathers.push(new weather(4, "Cold", -5, .8, 5));
 
-var weatherArray = []
-weatherArray.push(plainsWeathers);
-weatherArray.push(swampWeathers);
-weatherArray.push(tundraWeathers);
-weatherArray.push(desertWeathers);
-//console.log(weatherArray);
-//make a double array
-//redo function
-
 exports.getRandomWeather = function() {
     var num = (Math.floor(Math.random() * 100)) + 1;
     var probTotal = 0;
@@ -74,7 +65,7 @@ exports.getRandomWeather = function() {
 exports.getAllWeathers = function() {
     return allWeathers;
 }
-/*
+
 exports.getPlainsWeather = function() {
     var num = (Math.floor(Math.random() * 100)) + 1;
     var probTotal = 0;
@@ -91,8 +82,6 @@ exports.getPlainsWeather = function() {
     console.log("Returning Plains Weather");
     return plainsWeathers[i];
 }
-*/
-/*
 exports.getSwampWeather = function() {
     var num = (Math.floor(Math.random() * 100)) + 1;
     var probTotal = 0;
@@ -109,8 +98,6 @@ exports.getSwampWeather = function() {
     console.log("Returning Swamp Weather");
     return swampWeathers[i];
 }
-*/
-/*
 exports.getTundraWeather = function() {
     var num = (Math.floor(Math.random() * 100)) + 1;
     var probTotal = 0;
@@ -127,8 +114,6 @@ exports.getTundraWeather = function() {
     console.log("Returning Tundra Weather");
     return tundraWeathers[i];
 }
-*/
-/*
 exports.getDesertWeather = function() {
     var num = (Math.floor(Math.random() * 100)) + 1;
     var probTotal = 0;
@@ -145,4 +130,3 @@ exports.getDesertWeather = function() {
     console.log("Returning Desert Weather");
     return desertWeathers[i];
 }
-*/
