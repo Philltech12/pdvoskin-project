@@ -17,6 +17,7 @@ allWeathers.push(new weather(7, "Heavy Rain", -8, .4, 5));
 allWeathers.push(new weather(8, "Snow", -15, .3, 5));
 allWeathers.push(new weather(9, "Blizzard", -30, .1, 5));
 allWeathers.push(new weather(10, "Heavy Fog", -3, .5, 5));
+allWeathers.push(new weather(11, "Sandstorm", -20, .1, 5));
 
 var plainsWeathers = []
 plainsWeathers.push(new weather(1, "Hot", -3, .9, 10));
@@ -44,7 +45,8 @@ desertWeathers.push(new weather(0, "Very Hot", -8, .7, 20));
 desertWeathers.push(new weather(1, "Hot", -3, .9, 20));
 desertWeathers.push(new weather(2, "Warm", 1, 1, 40));
 desertWeathers.push(new weather(3, "Cool", 1, .95, 15));
-desertWeathers.push(new weather(4, "Cold", -5, .8, 5));
+desertWeathers.push(new weather(11, "Sandstorm", -20, .1, 5));
+//desertWeathers.push(new weather(4, "Cold", -5, .8, 5));
 
 exports.getRandomWeather = function() {
     var num = (Math.floor(Math.random() * 100)) + 1;
@@ -98,6 +100,23 @@ exports.getSwampWeather = function() {
     console.log("Returning Swamp Weather");
     return swampWeathers[i];
 }
+/*
+exports.getSwampWeather = function() {
+    var num = (Math.floor(Math.random() * 100)) + 1;
+    var probTotal = 0;
+    var i = 0;
+    var chosen = false;
+    while(!chosen) {
+        probTotal += swampWeathers[i].prob;
+        if(num <= probTotal) {
+            chosen = true;
+        } else {
+            i++
+        }//if
+    } //while
+    console.log("Returning Swamp Weather");
+    return swampWeathers[i];
+}*/
 exports.getTundraWeather = function() {
     var num = (Math.floor(Math.random() * 100)) + 1;
     var probTotal = 0;
